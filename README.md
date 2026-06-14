@@ -105,7 +105,7 @@ SKUs are automatically uppercased on save.
 
 ## Response Format
 
-All responses use JSON API–style `data` wrapping via Laravel API Resources.
+All responses use JSON API–style `data` wrapping via Laravel API Resources using CamelCase.
 
 ```json
 {
@@ -114,13 +114,13 @@ All responses use JSON API–style `data` wrapping via Laravel API Resources.
         "name": "Widget Pro",
         "sku": "WP-0001",
         "price": "49.99",
-        "formatted_price": "$49.99",
-        "stock_quantity": 100,
-        "is_active": true,
+        "formattedPrice": "$49.99",
+        "stockQuantity": 100,
+        "isActive": true,
         "category": { "id": 1, "name": "Electronics", "slug": "electronics" },
-        "suppliers": [{ "id": 1, "name": "Acme Corp", "cost_price": "22.50" }],
-        "created_at": "2026-06-13T10:00:00+00:00",
-        "updated_at": "2026-06-13T10:00:00+00:00"
+        "suppliers": [{ "id": 1, "name": "Acme Corp", "costPrice": "22.50" }],
+        "createdAt": "2026-06-13T10:00:00+00:00",
+        "updatedAt": "2026-06-13T10:00:00+00:00"
     }
 }
 ```
