@@ -1,0 +1,1646 @@
+[
+  {
+    "v": 12,
+    "id": "cmqc0q36i2nlgfw1my77p1gg9",
+    "name": "Users",
+    "folders": [],
+    "requests": [
+      {
+        "v": "17",
+        "auth": {
+          "authType": "inherit",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Register User",
+        "method": "POST",
+        "params": [
+          {
+            "key": "name",
+            "value": "abcd",
+            "active": true,
+            "description": ""
+          },
+          {
+            "key": "email",
+            "value": "test@email.com",
+            "active": true,
+            "description": ""
+          },
+          {
+            "key": "password",
+            "value": "12345678",
+            "active": true,
+            "description": ""
+          },
+          {
+            "key": "password_confirmation",
+            "value": "12345678",
+            "active": true,
+            "description": ""
+          }
+        ],
+        "headers": [],
+        "endpoint": "<<server>>/api/register",
+        "responses": {
+          "Register User": {
+            "body": "{\"message\":\"Registered successfully.\",\"data\":{\"token\":\"1|goOgOtOqahZurqJnpFbhzll9GUnUHvtIf11ZtgGq930285b2\",\"user\":{\"name\":\"abcd\",\"email\":\"test@email.com\",\"updated_at\":\"2026-06-13T07:23:00.000000Z\",\"created_at\":\"2026-06-13T07:23:00.000000Z\",\"id\":2}}}",
+            "code": 201,
+            "name": "Register User",
+            "status": "Created",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "authType": "none",
+                "authActive": false
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Register User",
+              "method": "POST",
+              "params": [
+                {
+                  "key": "name",
+                  "value": "abcd",
+                  "active": true,
+                  "description": ""
+                },
+                {
+                  "key": "email",
+                  "value": "test@email.com",
+                  "active": true,
+                  "description": ""
+                },
+                {
+                  "key": "password",
+                  "value": "12345678",
+                  "active": true,
+                  "description": ""
+                },
+                {
+                  "key": "password_confirmation",
+                  "value": "12345678",
+                  "active": true,
+                  "description": ""
+                }
+              ],
+              "headers": [],
+              "endpoint": "<<server>>/api/register",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc139w92u4rhp1ms3nbh6a1"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "authType": "inherit",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Login User",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "https://echo.hoppscotch.io",
+        "responses": {},
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2jok42nppfw1mz92m81oc"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "authType": "inherit",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Logout User",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "https://echo.hoppscotch.io",
+        "responses": {},
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2jtut2npqfw1mfz8h06x8"
+      }
+    ],
+    "auth": {
+      "authType": "inherit",
+      "authActive": true
+    },
+    "headers": [],
+    "variables": [],
+    "description": null,
+    "preRequestScript": "",
+    "testScript": ""
+  },
+  {
+    "v": 12,
+    "id": "cmqc0q7kh2nlhfw1mgkd751nm",
+    "name": "Category",
+    "folders": [],
+    "requests": [
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "List all category",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/categories",
+        "responses": {
+          "List all category": {
+            "body": "{\"message\":\"Success\",\"data\":[{\"id\":1,\"name\":\"Veniam Ipsam\",\"slug\":\"veniam-ipsam\",\"description\":\"Accusamus odit ex qui laboriosam ipsam cum eos.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":2,\"name\":\"Dicta Nihil\",\"slug\":\"dicta-nihil\",\"description\":\"Et cumque et quasi et fuga.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":3,\"name\":\"Facere Cum\",\"slug\":\"facere-cum\",\"description\":\"Quae nihil nam eum quibusdam est occaecati.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"Explicabo Est\",\"slug\":\"explicabo-est\",\"description\":\"Vel ut dolorem nisi fugiat illum odit.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":5,\"name\":\"Et Doloremque\",\"slug\":\"et-doloremque\",\"description\":\"Quidem sint eius aperiam ducimus non.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}]}",
+            "code": 200,
+            "name": "List all category",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "1|goOgOtOqahZurqJnpFbhzll9GUnUHvtIf11ZtgGq930285b2",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "List all category",
+              "method": "GET",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/categories",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc0wday2nlnfw1mwenam4ro"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": [
+            {
+              "key": "name",
+              "value": "test3",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "slug",
+              "value": "test3",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "description",
+              "value": "test create3",
+              "active": true,
+              "isFile": false
+            }
+          ],
+          "contentType": "multipart/form-data"
+        },
+        "name": "Create Category",
+        "method": "POST",
+        "params": [
+          {
+            "key": "name",
+            "value": "",
+            "active": true,
+            "description": ""
+          }
+        ],
+        "headers": [],
+        "endpoint": "<<server>>/api/categories",
+        "responses": {
+          "Create Category": {
+            "body": "{\"message\":\"Category created successfully.\",\"data\":{\"id\":6,\"name\":\"test\",\"slug\":\"test\",\"description\":\"test create\",\"createdAt\":\"2026-06-13T07:28:02+00:00\"}}",
+            "code": 201,
+            "name": "Create Category",
+            "status": "Created",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": [
+                  {
+                    "key": "name",
+                    "value": "test",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "slug",
+                    "value": "test",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "description",
+                    "value": "test create",
+                    "active": true,
+                    "isFile": false
+                  }
+                ],
+                "contentType": "multipart/form-data"
+              },
+              "name": "Create Category",
+              "method": "POST",
+              "params": [
+                {
+                  "key": "name",
+                  "value": "",
+                  "active": true,
+                  "description": ""
+                }
+              ],
+              "headers": [],
+              "endpoint": "<<server>>/api/categories",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc16vag2u4thp1m2sugfptj"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": [
+            {
+              "key": "name",
+              "value": "test2",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "slug",
+              "value": "test2",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "description",
+              "value": "update to test2",
+              "active": true,
+              "isFile": false
+            }
+          ],
+          "contentType": "multipart/form-data"
+        },
+        "name": "Update Cateogry",
+        "method": "PUT",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/categories/1",
+        "responses": {
+          "Update Cateogry": {
+            "body": "{\"message\":\"Success\",\"data\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}}",
+            "code": 200,
+            "name": "Update Cateogry",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": [
+                  {
+                    "key": "name",
+                    "value": "test2",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "slug",
+                    "value": "test2",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "description",
+                    "value": "update to test2",
+                    "active": true,
+                    "isFile": false
+                  }
+                ],
+                "contentType": "multipart/form-data"
+              },
+              "name": "Update Cateogry",
+              "method": "PUT",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/categories/1",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2l2f52udnhp1mdo42pltv"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Delete Category",
+        "method": "DELETE",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/categories/7",
+        "responses": {
+          "Delete Category": {
+            "body": "{\"message\":\"Category deleted successfully.\",\"data\":null}",
+            "code": 200,
+            "name": "Delete Category",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Delete Category",
+              "method": "DELETE",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/categories/7",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2l7lw2npsfw1mvltadjxj"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Get Category",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/categories/1",
+        "responses": {
+          "Get Category": {
+            "body": "{\"message\":\"Success\",\"data\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}}",
+            "code": 200,
+            "name": "Get Category",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Get Category",
+              "method": "GET",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/categories/1",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2lnd02udohp1mhokc80mu"
+      }
+    ],
+    "auth": {
+      "authType": "inherit",
+      "authActive": true
+    },
+    "headers": [],
+    "variables": [],
+    "description": null,
+    "preRequestScript": "",
+    "testScript": ""
+  },
+  {
+    "v": 12,
+    "id": "cmqc0qhpj2nlifw1m8bc0wxo9",
+    "name": "Supplier",
+    "folders": [],
+    "requests": [
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "List Supplier",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/suppliers",
+        "responses": {
+          "List Supplier": {
+            "body": "{\"message\":\"Success\",\"data\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":3,\"name\":\"Kovacek LLC\",\"email\":\"wendell03@kessler.com\",\"phone\":\"+1-731-904-2017\",\"address\":\"58560 Soledad Points Apt. 190\\nJaylanchester, VT 08174\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"Harvey-Sanford\",\"email\":\"fabiola47@considine.com\",\"phone\":\"724.295.8110\",\"address\":\"6941 Bayer Heights Suite 508\\nWest Hardy, AL 99851-1809\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":5,\"name\":\"Bartoletti and Sons\",\"email\":\"zboncak.corene@prohaska.com\",\"phone\":\"+1 (660) 702-8674\",\"address\":\"413 Tillman Crossing\\nSwaniawskiland, IN 00531-0501\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":6,\"name\":\"Runolfsdottir, Kshlerin and Schowalter\",\"email\":\"blanche.connelly@friesen.com\",\"phone\":\"1-907-817-4387\",\"address\":\"55377 Pauline Meadow\\nRolfsonborough, WI 99031\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":8,\"name\":\"King-Barton\",\"email\":\"richmond.luettgen@brekke.net\",\"phone\":\"539-289-8111\",\"address\":\"547 Clark Inlet\\nLednertown, FL 30331-2447\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}]}",
+            "code": 200,
+            "name": "List Supplier",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "List Supplier",
+              "method": "GET",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/suppliers",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2lz902nptfw1m3l1wwvvc"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": [
+            {
+              "key": "name",
+              "value": "test 1",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "email",
+              "value": "test1@email.com",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "phone",
+              "value": "123456789",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "address",
+              "value": "test address",
+              "active": true,
+              "isFile": false
+            }
+          ],
+          "contentType": "multipart/form-data"
+        },
+        "name": "Create Supplier",
+        "method": "POST",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/suppliers",
+        "responses": {
+          "Create Supplier": {
+            "body": "{\"message\":\"Supplier created successfully.\",\"data\":{\"id\":9,\"name\":\"test 1\",\"email\":\"test1@email.com\",\"phone\":\"123456789\",\"address\":\"test address\",\"createdAt\":\"2026-06-14T03:09:24+00:00\"}}",
+            "code": 201,
+            "name": "Create Supplier",
+            "status": "Created",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": [
+                  {
+                    "key": "name",
+                    "value": "test 1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "email",
+                    "value": "test1@email.com",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "phone",
+                    "value": "123456789",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "address",
+                    "value": "test address",
+                    "active": true,
+                    "isFile": false
+                  }
+                ],
+                "contentType": "multipart/form-data"
+              },
+              "name": "Create Supplier",
+              "method": "POST",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/suppliers",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2m3jv2npufw1m3eqz20kn"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Get Supplier",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/suppliers/1",
+        "responses": {
+          "Get Supplier": {
+            "body": "{\"message\":\"Success\",\"data\":{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}}",
+            "code": 200,
+            "name": "Get Supplier",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Get Supplier",
+              "method": "GET",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/suppliers/1",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2m7dd2npvfw1m3c8cwkag"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": [
+            {
+              "key": "name",
+              "value": "update 9",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "email",
+              "value": "update9@email.com",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "phone",
+              "value": "update 9",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "address",
+              "value": "update 9",
+              "active": true,
+              "isFile": false
+            }
+          ],
+          "contentType": "multipart/form-data"
+        },
+        "name": "Update Supplier",
+        "method": "PUT",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/suppliers/9",
+        "responses": {
+          "Update Supplier": {
+            "body": "{\"message\":\"Success\",\"data\":{\"id\":9,\"name\":\"update 9\",\"email\":\"update9@email.com\",\"phone\":\"update 9\",\"address\":\"update 9\",\"createdAt\":\"2026-06-14T03:09:24+00:00\"}}",
+            "code": 200,
+            "name": "Update Supplier",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": [
+                  {
+                    "key": "name",
+                    "value": "update 9",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "email",
+                    "value": "update9@email.com",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "phone",
+                    "value": "update 9",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "address",
+                    "value": "update 9",
+                    "active": true,
+                    "isFile": false
+                  }
+                ],
+                "contentType": "multipart/form-data"
+              },
+              "name": "Update Supplier",
+              "method": "PUT",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/suppliers/9",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2mbjf2npwfw1m41ev15pu"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Delete Supplier",
+        "method": "DELETE",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/suppliers/10",
+        "responses": {
+          "Delete Supplier": {
+            "body": "{\"message\":\"Supplier deleted successfully.\",\"data\":null}",
+            "code": 200,
+            "name": "Delete Supplier",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Delete Supplier",
+              "method": "DELETE",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/suppliers/10",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2mf462udphp1mm5dfbyzd"
+      }
+    ],
+    "auth": {
+      "authType": "inherit",
+      "authActive": true
+    },
+    "headers": [],
+    "variables": [],
+    "description": null,
+    "preRequestScript": "",
+    "testScript": ""
+  },
+  {
+    "v": 12,
+    "id": "cmqc0qnmb2tzdhp1mufhbo4t1",
+    "name": "Product",
+    "folders": [],
+    "requests": [
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "List Product",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/products",
+        "responses": {
+          "List Product": {
+            "body": "{\"message\":\"Success\",\"data\":[{\"id\":1,\"name\":\"facere cum ut\",\"sku\":\"IU-7538-LR\",\"description\":\"Amet molestiae quae totam dolor nihil. Magni magnam accusamus nihil excepturi necessitatibus veniam.\",\"price\":\"604.29\",\"formattedPrice\":\"$604.29\",\"stockQuantity\":36,\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"82.51\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"Harvey-Sanford\",\"email\":\"fabiola47@considine.com\",\"phone\":\"724.295.8110\",\"address\":\"6941 Bayer Heights Suite 508\\nWest Hardy, AL 99851-1809\",\"costPrice\":\"57.69\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":5,\"name\":\"Bartoletti and Sons\",\"email\":\"zboncak.corene@prohaska.com\",\"phone\":\"+1 (660) 702-8674\",\"address\":\"413 Tillman Crossing\\nSwaniawskiland, IN 00531-0501\",\"costPrice\":\"84.71\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":2,\"name\":\"voluptatem cupiditate qui\",\"sku\":\"BW-1660-WE\",\"description\":\"Harum nemo fugit quia illum ut ipsa odio. Alias repellat asperiores qui cupiditate ipsum laborum non dignissimos. Et id nesciunt totam placeat.\",\"price\":\"818.26\",\"formattedPrice\":\"$818.26\",\"stockQuantity\":137,\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":\"8.86\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":6,\"name\":\"Runolfsdottir, Kshlerin and Schowalter\",\"email\":\"blanche.connelly@friesen.com\",\"phone\":\"1-907-817-4387\",\"address\":\"55377 Pauline Meadow\\nRolfsonborough, WI 99031\",\"costPrice\":\"206.75\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":3,\"name\":\"corrupti minima molestiae\",\"sku\":\"AP-2177-PT\",\"description\":\"Odit sed eum temporibus. Consequatur in quia illo tenetur dolore doloremque. Ipsam molestiae possimus libero laudantium tempore quibusdam. Reprehenderit sit culpa voluptatem quod suscipit tempore quas.\",\"price\":\"656.30\",\"formattedPrice\":\"$656.30\",\"stockQuantity\":8,\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"32.88\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"Harvey-Sanford\",\"email\":\"fabiola47@considine.com\",\"phone\":\"724.295.8110\",\"address\":\"6941 Bayer Heights Suite 508\\nWest Hardy, AL 99851-1809\",\"costPrice\":\"109.59\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"alias eius corrupti\",\"sku\":\"LQ-8922-EL\",\"description\":\"Earum illum maiores totam accusantium aut quia. Voluptatem fuga aut cupiditate tempore ea. Ipsum impedit numquam ut veniam quam unde inventore. Quia praesentium soluta in ut.\",\"price\":\"438.06\",\"formattedPrice\":\"$438.06\",\"stockQuantity\":131,\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":\"141.79\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":5,\"name\":\"enim excepturi voluptates\",\"sku\":\"MV-5197-HV\",\"description\":\"Eius sit repudiandae distinctio qui voluptatem. Nobis voluptas est tenetur excepturi vel fugiat. Neque sint commodi iusto qui debitis et et est. Officiis sit ea deleniti officia debitis ut.\",\"price\":\"961.32\",\"formattedPrice\":\"$961.32\",\"stockQuantity\":47,\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":\"238.91\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":5,\"name\":\"Bartoletti and Sons\",\"email\":\"zboncak.corene@prohaska.com\",\"phone\":\"+1 (660) 702-8674\",\"address\":\"413 Tillman Crossing\\nSwaniawskiland, IN 00531-0501\",\"costPrice\":\"444.94\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":8,\"name\":\"King-Barton\",\"email\":\"richmond.luettgen@brekke.net\",\"phone\":\"539-289-8111\",\"address\":\"547 Clark Inlet\\nLednertown, FL 30331-2447\",\"costPrice\":\"41.25\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":6,\"name\":\"vitae hic repudiandae\",\"sku\":\"KZ-2552-EI\",\"description\":\"Velit quibusdam incidunt aspernatur assumenda quas nostrum. Numquam sed voluptatibus nobis sed aut non. Et voluptatem est consequuntur quia quia fuga.\",\"price\":\"670.89\",\"formattedPrice\":\"$670.89\",\"stockQuantity\":197,\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":4,\"name\":\"Harvey-Sanford\",\"email\":\"fabiola47@considine.com\",\"phone\":\"724.295.8110\",\"address\":\"6941 Bayer Heights Suite 508\\nWest Hardy, AL 99851-1809\",\"costPrice\":\"126.52\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":6,\"name\":\"Runolfsdottir, Kshlerin and Schowalter\",\"email\":\"blanche.connelly@friesen.com\",\"phone\":\"1-907-817-4387\",\"address\":\"55377 Pauline Meadow\\nRolfsonborough, WI 99031\",\"costPrice\":\"31.82\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"costPrice\":\"186.38\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"accusamus harum incidunt\",\"sku\":\"VB-6323-IT\",\"description\":\"Inventore molestiae iure dolore maxime quia itaque consequatur. Eaque rerum similique et sed dolorum blanditiis.\",\"price\":\"601.85\",\"formattedPrice\":\"$601.85\",\"stockQuantity\":62,\"isActive\":true,\"category\":{\"id\":2,\"name\":\"Dicta Nihil\",\"slug\":\"dicta-nihil\",\"description\":\"Et cumque et quasi et fuga.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":5,\"name\":\"Bartoletti and Sons\",\"email\":\"zboncak.corene@prohaska.com\",\"phone\":\"+1 (660) 702-8674\",\"address\":\"413 Tillman Crossing\\nSwaniawskiland, IN 00531-0501\",\"costPrice\":\"374.83\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"costPrice\":\"365.96\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":8,\"name\":\"quam modi eligendi\",\"sku\":\"OO-2546-AN\",\"description\":\"Nemo dolorem aut provident. Quos esse neque et reiciendis quos quia. Praesentium et illo ipsam consequatur nobis.\",\"price\":\"586.58\",\"formattedPrice\":\"$586.58\",\"stockQuantity\":60,\"isActive\":true,\"category\":{\"id\":2,\"name\":\"Dicta Nihil\",\"slug\":\"dicta-nihil\",\"description\":\"Et cumque et quasi et fuga.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"costPrice\":\"176.71\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":8,\"name\":\"King-Barton\",\"email\":\"richmond.luettgen@brekke.net\",\"phone\":\"539-289-8111\",\"address\":\"547 Clark Inlet\\nLednertown, FL 30331-2447\",\"costPrice\":\"273.24\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":9,\"name\":\"praesentium totam id\",\"sku\":\"HG-2460-HL\",\"description\":\"Facere odio a nulla autem expedita qui. Totam mollitia nobis sint tempore. Eaque et ipsa ut et. Voluptas deserunt at sed ex fugit.\",\"price\":\"612.27\",\"formattedPrice\":\"$612.27\",\"stockQuantity\":91,\"isActive\":true,\"category\":{\"id\":2,\"name\":\"Dicta Nihil\",\"slug\":\"dicta-nihil\",\"description\":\"Et cumque et quasi et fuga.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"68.79\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"Harvey-Sanford\",\"email\":\"fabiola47@considine.com\",\"phone\":\"724.295.8110\",\"address\":\"6941 Bayer Heights Suite 508\\nWest Hardy, AL 99851-1809\",\"costPrice\":\"481.21\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"costPrice\":\"225.05\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":10,\"name\":\"in repellendus veniam\",\"sku\":\"FL-9447-AR\",\"description\":\"Reiciendis tempora atque facilis illo. Est assumenda distinctio quam. Velit delectus ut laborum et cumque sed eos. Omnis quibusdam minima fuga voluptatem quia. Error maiores ullam numquam quis id beatae et.\",\"price\":\"462.51\",\"formattedPrice\":\"$462.51\",\"stockQuantity\":17,\"isActive\":true,\"category\":{\"id\":2,\"name\":\"Dicta Nihil\",\"slug\":\"dicta-nihil\",\"description\":\"Et cumque et quasi et fuga.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":\"233.53\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"214.53\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"costPrice\":\"116.94\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":11,\"name\":\"iure recusandae ea\",\"sku\":\"RO-7533-FK\",\"description\":\"Temporibus assumenda rerum dicta consequuntur officia unde reprehenderit. Consectetur fugiat ipsam minus culpa delectus. Ipsa quas veniam maiores libero velit.\",\"price\":\"516.98\",\"formattedPrice\":\"$516.98\",\"stockQuantity\":67,\"isActive\":true,\"category\":{\"id\":2,\"name\":\"Dicta Nihil\",\"slug\":\"dicta-nihil\",\"description\":\"Et cumque et quasi et fuga.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"438.05\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":3,\"name\":\"Kovacek LLC\",\"email\":\"wendell03@kessler.com\",\"phone\":\"+1-731-904-2017\",\"address\":\"58560 Soledad Points Apt. 190\\nJaylanchester, VT 08174\",\"costPrice\":\"342.14\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"Harvey-Sanford\",\"email\":\"fabiola47@considine.com\",\"phone\":\"724.295.8110\",\"address\":\"6941 Bayer Heights Suite 508\\nWest Hardy, AL 99851-1809\",\"costPrice\":\"129.76\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":12,\"name\":\"sint aut inventore\",\"sku\":\"XT-9802-JO\",\"description\":\"Maxime et dolorem nesciunt praesentium eaque modi et. Animi itaque doloribus qui id minima. Id id illo atque delectus qui.\",\"price\":\"525.58\",\"formattedPrice\":\"$525.58\",\"stockQuantity\":75,\"isActive\":true,\"category\":{\"id\":2,\"name\":\"Dicta Nihil\",\"slug\":\"dicta-nihil\",\"description\":\"Et cumque et quasi et fuga.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"126.98\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":13,\"name\":\"beatae fuga perspiciatis\",\"sku\":\"OH-0462-FO\",\"description\":\"Molestias consequatur omnis dignissimos tempora a dolores. Dolorem voluptatibus dolores quibusdam unde nostrum et modi laboriosam. Omnis nesciunt expedita ab sit vitae explicabo. A perspiciatis architecto minus laboriosam illum eius.\",\"price\":\"826.20\",\"formattedPrice\":\"$826.20\",\"stockQuantity\":194,\"isActive\":true,\"category\":{\"id\":3,\"name\":\"Facere Cum\",\"slug\":\"facere-cum\",\"description\":\"Quae nihil nam eum quibusdam est occaecati.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":\"9.60\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":3,\"name\":\"Kovacek LLC\",\"email\":\"wendell03@kessler.com\",\"phone\":\"+1-731-904-2017\",\"address\":\"58560 Soledad Points Apt. 190\\nJaylanchester, VT 08174\",\"costPrice\":\"71.22\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"costPrice\":\"275.28\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":14,\"name\":\"ullam necessitatibus corporis\",\"sku\":\"DX-3145-KX\",\"description\":\"Fuga quam enim dolore molestias sed libero rerum qui. Sunt recusandae et necessitatibus voluptatum. Rerum vitae possimus modi possimus non ipsam omnis. Quo laudantium omnis voluptatibus aliquam autem quia.\",\"price\":\"874.01\",\"formattedPrice\":\"$874.01\",\"stockQuantity\":77,\"isActive\":true,\"category\":{\"id\":3,\"name\":\"Facere Cum\",\"slug\":\"facere-cum\",\"description\":\"Quae nihil nam eum quibusdam est occaecati.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"429.00\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":3,\"name\":\"Kovacek LLC\",\"email\":\"wendell03@kessler.com\",\"phone\":\"+1-731-904-2017\",\"address\":\"58560 Soledad Points Apt. 190\\nJaylanchester, VT 08174\",\"costPrice\":\"283.50\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":15,\"name\":\"rerum in et\",\"sku\":\"BF-8236-LA\",\"description\":\"Iusto in in libero consequatur porro velit. Amet magni ut commodi quibusdam ut at. Hic consequatur velit ea fuga pariatur tempora delectus aperiam.\",\"price\":\"735.58\",\"formattedPrice\":\"$735.58\",\"stockQuantity\":123,\"isActive\":true,\"category\":{\"id\":3,\"name\":\"Facere Cum\",\"slug\":\"facere-cum\",\"description\":\"Quae nihil nam eum quibusdam est occaecati.\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"350.59\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":5,\"name\":\"Bartoletti and Sons\",\"email\":\"zboncak.corene@prohaska.com\",\"phone\":\"+1 (660) 702-8674\",\"address\":\"413 Tillman Crossing\\nSwaniawskiland, IN 00531-0501\",\"costPrice\":\"85.29\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":7,\"name\":\"Dibbert, Mueller and Swift\",\"email\":\"abigail89@flatley.com\",\"phone\":\"+12408105399\",\"address\":\"606 Senger Ports Suite 777\\nWest Damaris, MO 30264-9484\",\"costPrice\":\"138.08\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"}]}",
+            "code": 200,
+            "name": "List Product",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "List Product",
+              "method": "GET",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/products",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2mny92udqhp1msxfnldk1"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": [
+            {
+              "key": "category_id",
+              "value": "1",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "name",
+              "value": "test product",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "sku",
+              "value": "test-p-2",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "description",
+              "value": "test-product-1",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "price",
+              "value": "9.99",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "stock_quantity",
+              "value": "100",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "is_active",
+              "value": "0",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "supplier_ids[]",
+              "value": "1",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "supplier_ids[]",
+              "value": "2",
+              "active": true,
+              "isFile": false
+            }
+          ],
+          "contentType": "multipart/form-data"
+        },
+        "name": "Create Product",
+        "method": "POST",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/products",
+        "responses": {
+          "Create Product": {
+            "body": "{\"message\":\"Product created successfully.\",\"data\":{\"id\":38,\"name\":\"test product\",\"sku\":\"TEST-P-1\",\"description\":\"test-product-1\",\"price\":\"9.99\",\"formattedPrice\":\"$9.99\",\"stockQuantity\":\"100\",\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":null,\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":null,\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-14T03:47:44+00:00\",\"updatedAt\":\"2026-06-14T03:47:44+00:00\"}}",
+            "code": 201,
+            "name": "Create Product",
+            "status": "Created",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": [
+                  {
+                    "key": "category_id",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "name",
+                    "value": "test product",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "sku",
+                    "value": "test-p-1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "description",
+                    "value": "test-product-1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "price",
+                    "value": "9.99",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "stock_quantity",
+                    "value": "100",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "is_active",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "supplier_ids[]",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "supplier_ids[]",
+                    "value": "2",
+                    "active": true,
+                    "isFile": false
+                  }
+                ],
+                "contentType": "multipart/form-data"
+              },
+              "name": "Create Product",
+              "method": "POST",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/products",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2mtb82udrhp1mr3unmwy6"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Get Product",
+        "method": "GET",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/products/1",
+        "responses": {
+          "Get Product": {
+            "body": "{\"message\":\"Success\",\"data\":{\"id\":1,\"name\":\"facere cum ut\",\"sku\":\"IU-7538-LR\",\"description\":\"Amet molestiae quae totam dolor nihil. Magni magnam accusamus nihil excepturi necessitatibus veniam.\",\"price\":\"604.29\",\"formattedPrice\":\"$604.29\",\"stockQuantity\":36,\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":\"82.51\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":4,\"name\":\"Harvey-Sanford\",\"email\":\"fabiola47@considine.com\",\"phone\":\"724.295.8110\",\"address\":\"6941 Bayer Heights Suite 508\\nWest Hardy, AL 99851-1809\",\"costPrice\":\"57.69\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":5,\"name\":\"Bartoletti and Sons\",\"email\":\"zboncak.corene@prohaska.com\",\"phone\":\"+1 (660) 702-8674\",\"address\":\"413 Tillman Crossing\\nSwaniawskiland, IN 00531-0501\",\"costPrice\":\"84.71\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-13T07:22:37+00:00\",\"updatedAt\":\"2026-06-13T07:22:37+00:00\"}}",
+            "code": 200,
+            "name": "Get Product",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Get Product",
+              "method": "GET",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/products/1",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2mxgr2npyfw1mpwdr06mt"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": [
+            {
+              "key": "category_id",
+              "value": "1",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "name",
+              "value": "test product33",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "sku",
+              "value": "test-p-2]",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "description",
+              "value": "test-product-1",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "price",
+              "value": "9.99",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "stock_quantity",
+              "value": "100",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "is_active",
+              "value": "0",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "supplier_ids[]",
+              "value": "1",
+              "active": true,
+              "isFile": false
+            },
+            {
+              "key": "supplier_ids[]",
+              "value": "2",
+              "active": true,
+              "isFile": false
+            }
+          ],
+          "contentType": "multipart/form-data"
+        },
+        "name": "Update Product",
+        "method": "PUT",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/products/39",
+        "responses": {
+          "Create Product": {
+            "body": "{\"message\":\"Product created successfully.\",\"data\":{\"id\":38,\"name\":\"test product\",\"sku\":\"TEST-P-1\",\"description\":\"test-product-1\",\"price\":\"9.99\",\"formattedPrice\":\"$9.99\",\"stockQuantity\":\"100\",\"isActive\":true,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":null,\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":null,\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-14T03:47:44+00:00\",\"updatedAt\":\"2026-06-14T03:47:44+00:00\"}}",
+            "code": 201,
+            "name": "Create Product",
+            "status": "Created",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": [
+                  {
+                    "key": "category_id",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "name",
+                    "value": "test product",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "sku",
+                    "value": "test-p-1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "description",
+                    "value": "test-product-1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "price",
+                    "value": "9.99",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "stock_quantity",
+                    "value": "100",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "is_active",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "supplier_ids[]",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "supplier_ids[]",
+                    "value": "2",
+                    "active": true,
+                    "isFile": false
+                  }
+                ],
+                "contentType": "multipart/form-data"
+              },
+              "name": "Create Product",
+              "method": "POST",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/products",
+              "requestVariables": []
+            }
+          },
+          "Update Product": {
+            "body": "{\"message\":\"Success\",\"data\":{\"id\":39,\"name\":\"test product33\",\"sku\":\"TEST-P-2]\",\"description\":\"test-product-1\",\"price\":\"9.99\",\"formattedPrice\":\"$9.99\",\"stockQuantity\":\"100\",\"isActive\":false,\"category\":{\"id\":1,\"name\":\"test2\",\"slug\":\"test2\",\"description\":\"update to test2\",\"createdAt\":\"2026-06-13T07:22:37+00:00\"},\"suppliers\":[{\"id\":1,\"name\":\"Carroll-Homenick\",\"email\":\"queen81@langosh.com\",\"phone\":\"754.555.0356\",\"address\":\"1975 Leatha Estates\\nJenkinsland, IA 38197\",\"costPrice\":null,\"createdAt\":\"2026-06-13T07:22:37+00:00\"},{\"id\":2,\"name\":\"Hessel Ltd\",\"email\":\"haag.ocie@graham.net\",\"phone\":\"1-573-257-2110\",\"address\":\"77939 Cormier Mount Apt. 220\\nStammmouth, PA 19647\",\"costPrice\":null,\"createdAt\":\"2026-06-13T07:22:37+00:00\"}],\"createdAt\":\"2026-06-14T03:47:59+00:00\",\"updatedAt\":\"2026-06-14T04:02:00+00:00\"}}",
+            "code": 200,
+            "name": "Update Product",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": [
+                  {
+                    "key": "category_id",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "name",
+                    "value": "test product33",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "sku",
+                    "value": "test-p-2]",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "description",
+                    "value": "test-product-1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "price",
+                    "value": "9.99",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "stock_quantity",
+                    "value": "100",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "is_active",
+                    "value": "0",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "supplier_ids[]",
+                    "value": "1",
+                    "active": true,
+                    "isFile": false
+                  },
+                  {
+                    "key": "supplier_ids[]",
+                    "value": "2",
+                    "active": true,
+                    "isFile": false
+                  }
+                ],
+                "contentType": "multipart/form-data"
+              },
+              "name": "Update Product",
+              "method": "PUT",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/products/39",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqd9b75y003cfn1m6s9y3we5"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Delete Product",
+        "method": "DELETE",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/products/39",
+        "responses": {
+          "Delete Product": {
+            "body": "{\"message\":\"Product deleted successfully.\",\"data\":null}",
+            "code": 200,
+            "name": "Delete Product",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Delete Product",
+              "method": "DELETE",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/products/39",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2n7zz2npzfw1mywqj9mau"
+      },
+      {
+        "v": "17",
+        "auth": {
+          "token": "<<token>>",
+          "authType": "bearer",
+          "authActive": true
+        },
+        "body": {
+          "body": null,
+          "contentType": null
+        },
+        "name": "Restore Product",
+        "method": "POST",
+        "params": [],
+        "headers": [],
+        "endpoint": "<<server>>/api/products/39/restore",
+        "responses": {
+          "Restore Product": {
+            "body": "{\"message\":\"Product restored successfully.\",\"data\":null}",
+            "code": 200,
+            "name": "Restore Product",
+            "status": "OK",
+            "headers": [
+              {
+                "key": "cache-control",
+                "value": "no-cache, private"
+              },
+              {
+                "key": "content-type",
+                "value": "application/json"
+              }
+            ],
+            "originalRequest": {
+              "v": "6",
+              "auth": {
+                "token": "<<token>>",
+                "authType": "bearer",
+                "authActive": true
+              },
+              "body": {
+                "body": null,
+                "contentType": null
+              },
+              "name": "Restpre Product",
+              "method": "POST",
+              "params": [],
+              "headers": [],
+              "endpoint": "<<server>>/api/products/39/restore",
+              "requestVariables": []
+            }
+          }
+        },
+        "testScript": "",
+        "description": null,
+        "preRequestScript": "",
+        "requestVariables": [],
+        "id": "cmqc2nf9w2udthp1m3vb93qrf"
+      }
+    ],
+    "auth": {
+      "authType": "inherit",
+      "authActive": true
+    },
+    "headers": [],
+    "variables": [],
+    "description": null,
+    "preRequestScript": "",
+    "testScript": ""
+  }
+]
